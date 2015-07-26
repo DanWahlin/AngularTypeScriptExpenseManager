@@ -1,0 +1,1 @@
+{"version":3,"sources":["expenseApp/controllers/employees/employeeInterfaces.ts"],"names":[],"mappings":"AAEC","file":"expenseApp/controllers/employees/employeeInterfaces.js","sourcesContent":["interface IEmployeeRouteParams extends ng.route.IRouteParamsService {\n    employeeId: string;\n}\n"],"sourceRoot":"/source/"}

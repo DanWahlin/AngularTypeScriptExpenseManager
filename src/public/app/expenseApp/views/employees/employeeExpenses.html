@@ -1,0 +1,21 @@
+﻿<div class="expenses view">
+    <div class="container">
+        <header>
+            <h3><span class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;Employee Expenses</h3>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <div>
+                        <h4>Expenses for <a href="#/employeeEdit/{{::vm.employee.id}}" class="capitalize">{{::vm.employee.name.first}} {{::vm.employee.name.last }} <i class="icon-edit editIcon"></i></a></h4>
+                        <span class="capitalize">{{::vm.employee.location.street}}</span>
+                        <br />
+                        <span class="capitalize">{{::vm.employee.location.city}}, {{::vm.employee.location.state}}</span>
+                        <br /><br />
+                    </div>
+                    <div data-ng-include="'/app/expenseApp/views/expenses/expensesTable.html'" data-ng-controller="ExpenseChildController as vm" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

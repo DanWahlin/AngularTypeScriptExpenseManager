@@ -1,0 +1,45 @@
+{
+  "name": "ngconf-typescript",
+  "version": "0.1.0",
+  "description": "AngularJS and TypeScript",
+  "contributors": [
+    {
+      "name": "Andrew Connell",
+      "email": "me@andrewconnell.com"
+    },
+    {
+      "name": "Dan Wahlin",
+      "email": "dwahlin@wahlinconsulting.com"
+    }
+  ],
+  "keywords": [
+    "angularjs",
+    "typescript",
+    "office365",
+    "azure",
+    "azure ad",
+    "adal"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "express": "^4.13.1",
+    "morgan": "^1.6.1",
+    "node-redis": "^0.1.7",
+    "redis": "^0.12.1",
+    "request": "^2.60.0"
+  },
+  "devDependencies": {
+    "del": "^1.2.0",
+    "gulp-clean": "^0.3.1",
+    "gulp": "^3.9.0",
+    "gulp-debug": "^2.0.1",
+    "gulp-inject": "^1.5.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-tslint": "^3.1.1-beta",
+    "gulp-typescript": "^2.8.0",
+    "gulp-tsd": "^0.0.4",
+    "tsd": "^0.6.3",
+    "merge2": "0.3.6"
+  }
+}

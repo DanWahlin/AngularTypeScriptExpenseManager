@@ -1,0 +1,59 @@
+[
+	{
+		"employeeId": 1,
+		"expenses": [
+			{
+				"id": 1,
+				"title": "Disney Conference Flight",
+				"expenseCategory": "Travel",
+				"created": "07/26/2015",
+				"amount": 750.00
+			},
+			{
+				"id": 2,
+				"title": "Disney Conference Hotel",
+				"expenseCategory": "Travel",
+				"created": "07/26/2015",
+				"amount": 1200.00
+			},
+			{
+				"id": 3,
+				"title": "Disney Conference Food",
+				"expenseCategory": "Travel",
+				"created": "07/26/2015",
+				"amount": 250.00
+			}
+		]
+	},
+	{
+		"employeeId": 2,
+		"expenses": [
+			{
+				"id": 1,
+				"title": "Printer Paper",
+				"expenseCategory": "Supplies",
+				"created": "07/10/2015",
+				"amount": 50.00
+			}
+		]
+	},
+	{
+		"employeeId": 3,
+		"expenses": [
+			{
+				"id": 1,
+				"title": "Various Apps",
+				"expenseCategory": "Software",
+				"created": "05/17/2015",
+				"amount": 1049.00
+			},
+			{
+				"id": 2,
+				"title": "Video Card Upgrade",
+				"expenseCategory": "Hardware",
+				"created": "05/17/2015",
+				"amount": 349.00
+			}
+		]
+	}
+]

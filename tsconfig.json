@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "noExternalResolve": true,
+        "declarationFiles": false,
+        "sourceMap": true
+    }
+}

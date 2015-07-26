@@ -1,0 +1,302 @@
+[
+    {
+        "_id": "55b44fcd3edd9369ae6d95bf",
+        "id": 1,
+        "name": "Alabama",
+        "abbreviation": "AL"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95c1",
+        "id": 3,
+        "name": "Alaska",
+        "abbreviation": "AK"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95c3",
+        "id": 5,
+        "name": "Arizona",
+        "abbreviation": "AZ"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95c5",
+        "id": 7,
+        "name": "Arkansas",
+        "abbreviation": "AR"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95c7",
+        "id": 9,
+        "name": "California",
+        "abbreviation": "CA"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95c9",
+        "id": 11,
+        "name": "Colorado",
+        "abbreviation": "CO"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95cb",
+        "id": 13,
+        "name": "Connecticut",
+        "abbreviation": "CT"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95cd",
+        "id": 15,
+        "name": "Delaware",
+        "abbreviation": "DE"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95cf",
+        "id": 17,
+        "name": "Florida",
+        "abbreviation": "FL"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95d1",
+        "id": 19,
+        "name": "Georgia",
+        "abbreviation": "GA"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95d3",
+        "id": 21,
+        "name": "Hawaii",
+        "abbreviation": "HI"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95d5",
+        "id": 23,
+        "name": "Idaho",
+        "abbreviation": "ID"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95d7",
+        "id": 25,
+        "name": "Illinois",
+        "abbreviation": "IL"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95d9",
+        "id": 27,
+        "name": "Indiana",
+        "abbreviation": "IN"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95db",
+        "id": 29,
+        "name": "Iowa",
+        "abbreviation": "IA"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95dd",
+        "id": 31,
+        "name": "Kansas",
+        "abbreviation": "KS"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95df",
+        "id": 33,
+        "name": "Kentucky",
+        "abbreviation": "KY"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95e1",
+        "id": 35,
+        "name": "Louisiana",
+        "abbreviation": "LA"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95e3",
+        "id": 37,
+        "name": "Maine",
+        "abbreviation": "ME"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95e5",
+        "id": 39,
+        "name": "Maryland",
+        "abbreviation": "MD"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95e7",
+        "id": 41,
+        "name": "Massachusetts",
+        "abbreviation": "MA"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95e9",
+        "id": 43,
+        "name": "Michigan",
+        "abbreviation": "MI"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95eb",
+        "id": 45,
+        "name": "Minnesota",
+        "abbreviation": "MN"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95ed",
+        "id": 47,
+        "name": "Mississippi",
+        "abbreviation": "MS"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95ef",
+        "id": 49,
+        "name": "Missouri",
+        "abbreviation": "MO"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95c0",
+        "id": 2,
+        "name": "Montana",
+        "abbreviation": "MT"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95c2",
+        "id": 4,
+        "name": "Nebraska",
+        "abbreviation": "NE"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95c4",
+        "id": 6,
+        "name": "Nevada",
+        "abbreviation": "NV"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95c6",
+        "id": 8,
+        "name": "New Hampshire",
+        "abbreviation": "NH"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95c8",
+        "id": 10,
+        "name": "New Jersey",
+        "abbreviation": "NJ"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95ca",
+        "id": 12,
+        "name": "New Mexico",
+        "abbreviation": "NM"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95cc",
+        "id": 14,
+        "name": "New York",
+        "abbreviation": "NY"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95ce",
+        "id": 16,
+        "name": "North Carolina",
+        "abbreviation": "NC"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95d0",
+        "id": 18,
+        "name": "North Dakota",
+        "abbreviation": "ND"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95d2",
+        "id": 20,
+        "name": "Ohio",
+        "abbreviation": "OH"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95d4",
+        "id": 22,
+        "name": "Oklahoma",
+        "abbreviation": "OK"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95d6",
+        "id": 24,
+        "name": "Oregon",
+        "abbreviation": "OR"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95d8",
+        "id": 26,
+        "name": "Pennsylvania",
+        "abbreviation": "PA"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95da",
+        "id": 28,
+        "name": "Rhode Island",
+        "abbreviation": "RI"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95dc",
+        "id": 30,
+        "name": "South Carolina",
+        "abbreviation": "SC"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95de",
+        "id": 32,
+        "name": "South Dakota",
+        "abbreviation": "SD"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95e0",
+        "id": 34,
+        "name": "Tennessee",
+        "abbreviation": "TN"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95e2",
+        "id": 36,
+        "name": "Texas",
+        "abbreviation": "TX"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95e4",
+        "id": 38,
+        "name": "Utah",
+        "abbreviation": "UT"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95e6",
+        "id": 40,
+        "name": "Vermont",
+        "abbreviation": "VT"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95e8",
+        "id": 42,
+        "name": "Virginia",
+        "abbreviation": "VA"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95ea",
+        "id": 44,
+        "name": "Washington",
+        "abbreviation": "WA"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95ec",
+        "id": 46,
+        "name": "West Virginia",
+        "abbreviation": "WV"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95ee",
+        "id": 48,
+        "name": "Wisconsin",
+        "abbreviation": "WI"
+    },
+    {
+        "_id": "55b44fcd3edd9369ae6d95f0",
+        "id": 50,
+        "name": "Wyoming",
+        "abbreviation": "WY"
+    }
+]
