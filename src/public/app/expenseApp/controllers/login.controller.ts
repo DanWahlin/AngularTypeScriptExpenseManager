@@ -12,7 +12,7 @@ module expenseApp {
         static $inject = ['$routeParams', '$location', 'expenseApp.services.authService'];
         constructor(private $routeParams: shared.IRouteParamsServiceWithRedirect, 
                     private $location: ng.ILocationService,
-                    private authService) {
+                    private authService: services.IAuthService) {
             
         }
 

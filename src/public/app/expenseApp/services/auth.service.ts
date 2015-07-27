@@ -3,8 +3,13 @@
 
 module expenseApp.services {
     'use strict';
+    
+    export interface IAuthService {
+        login(email, password): ng.IPromise<boolean>;
+        logout(): ng.IPromise<boolean>;
+    }
 
-    export class AuthService {
+    export class AuthService implements IAuthService {
         serviceBase: string = '/api/auth/';
         user = {
             loginPath: '/login',
