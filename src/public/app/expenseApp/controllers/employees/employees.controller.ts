@@ -1,7 +1,7 @@
 ///<reference path="../../../../../../tools/typings/tsd.d.ts" />
 ///<reference path="../../../../../../tools/typings/expenseApp.d.ts" />
 
-module expenseApp.employees {
+namespace expenseApp.employees {
 
     interface IPagingInfo {
         currentPage: number;
@@ -51,7 +51,7 @@ module expenseApp.employees {
         deleteEmployee(id) {
 
             var emp = this.getEmployeeById(id);
-            var empName = emp.firstName + ' ' + emp.lastName;
+            var empName = emp.name.first + ' ' + emp.name.first;
 
             var modalOptions = {
                 closeButtonText: 'Cancel',
@@ -154,7 +154,7 @@ module expenseApp.employees {
             };
         }
 
-        getEmployeeById(id) {
+        getEmployeeById(id: number) : shared.IEmployee {
             for (var i = 0; i < this.employees.length; i++) {
                 var emp = this.employees[i];
                 if (emp.id === id) {

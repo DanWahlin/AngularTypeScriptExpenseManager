@@ -37,7 +37,7 @@ var expenseApp;
             EmployeesController.prototype.deleteEmployee = function (id) {
                 var _this = this;
                 var emp = this.getEmployeeById(id);
-                var empName = emp.firstName + ' ' + emp.lastName;
+                var empName = emp.name.first + ' ' + emp.name.first;
                 var modalOptions = {
                     closeButtonText: 'Cancel',
                     actionButtonText: 'Delete Employee',

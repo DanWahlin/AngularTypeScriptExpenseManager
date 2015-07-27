@@ -27,7 +27,6 @@ var expenseApp;
                 _this.$location.path(_this.path);
             });
         };
-        ;
         LoginController.$inject = ['$routeParams', '$location', 'expenseApp.services.authService'];
         return LoginController;
     })();

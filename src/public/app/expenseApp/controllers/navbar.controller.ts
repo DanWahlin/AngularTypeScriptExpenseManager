@@ -1,7 +1,7 @@
 ///<reference path="../../../../../tools/typings/tsd.d.ts" />
 ///<reference path="../../../../../tools/typings/expenseApp.d.ts" />
 
-module expenseApp {
+namespace expenseApp {
 
     class NavbarController {
         isCollapsed: boolean = false;
@@ -10,7 +10,7 @@ module expenseApp {
 
         static $inject = ['$scope', '$location', '$window', 'expenseApp.services.authService'];
         constructor(private $scope: ng.IScope, private $location,
-                    private $window: ng.IWindowService, private authService) {
+                    private $window: ng.IWindowService, private authService: services.IAuthService) {
             var self = this;
             this.$scope.$on('loginStatusChanged', (loggedIn) => {
                 self.setLoginLogoutText();

@@ -1,7 +1,7 @@
 ///<reference path="../../../../../tools/typings/tsd.d.ts" />
 ///<reference path="../../../../../tools/typings/expenseApp.d.ts" />
 
-module expenseApp {
+namespace expenseApp {
 
     class LoginController {
         path = '/';
@@ -32,7 +32,7 @@ module expenseApp {
 
                 this.$location.path(this.path);
             });
-        };
+        }
     }
 
     angular.module('expenseApp').controller('expenseApp.LoginController', LoginController);

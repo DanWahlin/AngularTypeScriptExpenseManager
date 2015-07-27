@@ -1,17 +1,24 @@
 ///<reference path="../../../../../tools/typings/tsd.d.ts" />
 ///<reference path="../../../../../tools/typings/expenseApp.d.ts" />
 
-module expenseApp.services {
+namespace expenseApp.services {
     'use strict';
     
     export interface IAuthService {
-        login(email, password): ng.IPromise<boolean>;
+        login(email: string, password: string): ng.IPromise<boolean>;
         logout(): ng.IPromise<boolean>;
+        user: IUser;
+    }
+    
+    export interface IUser {
+        loginPath: string;
+        isAuthenticated: boolean;
+        roles: string[];
     }
 
     export class AuthService implements IAuthService {
         serviceBase: string = '/api/auth/';
-        user = {
+        user: IUser = {
             loginPath: '/login',
             isAuthenticated: false,
             roles: null
@@ -21,7 +28,7 @@ module expenseApp.services {
             
         }
 
-        login(email, password) : ng.IPromise<boolean>  {
+        login(email: string, password: string) : ng.IPromise<boolean>  {
             return this.$http.post(this.serviceBase + 'login', { userLogin: { userName: email, password: password } }).then(
             (results: ng.IHttpPromiseCallbackArg<boolean>) => {
                 var loggedIn = results.data;
@@ -43,7 +50,7 @@ module expenseApp.services {
             this.$rootScope.$broadcast('redirectToLogin', null);
         }
 
-        changeAuth(loggedIn) {
+        changeAuth(loggedIn: boolean) {
             this.user.isAuthenticated = loggedIn;
             this.$rootScope.$broadcast('loginStatusChanged', loggedIn);
         }
