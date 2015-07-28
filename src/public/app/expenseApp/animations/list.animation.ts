@@ -1,19 +1,19 @@
 ///<reference path="../../../../../tools/typings/tsd.d.ts" />
 ///<reference path="../../../../../tools/typings/expenseApp.d.ts" />
 
-module expenseApp {
+namespace expenseApp {
 
   'use strict';
 
   class WcAnimations {
 
-    private _duration:number = 0.5;
+    private _duration: number = 0.5;
 
     enter(element:JQuery, done:any) {
-        var random = Math.random() * 100;
+        var random: number = Math.random() * 100;
         TweenMax.set(element, {opacity: 0, left: random + 'px'});
 
-        var random2 = Math.random();
+        var random2: number = Math.random();
         TweenMax.to(element, this._duration, {
             opacity:    1,
             left:       '0px',

@@ -3,7 +3,7 @@
 
 'use strict';
 
-module expenseApp {
+namespace expenseApp {
 
   export function nameExpenseFilter() {
     return (employees: shared.IEmployee[], filterValue:string) => {

@@ -6,11 +6,12 @@ namespace expenseApp {
     class NavbarController {
         isCollapsed: boolean = false;
         appTitle: string = 'Expense Management';
-        loginLogoutText = 'Login';
+        loginLogoutText: string = 'Login';
 
         static $inject = ['$scope', '$location', '$window', 'expenseApp.services.authService'];
         constructor(private $scope: ng.IScope, private $location,
-                    private $window: ng.IWindowService, private authService: services.IAuthService) {
+                    private $window: ng.IWindowService, 
+                    private authService: services.AuthService) {
             var self = this;
             this.$scope.$on('loginStatusChanged', (loggedIn) => {
                 self.setLoginLogoutText();
@@ -23,7 +24,7 @@ namespace expenseApp {
             this.setLoginLogoutText();
         }
 
-        loginOrOut() {
+        loginOrOut() : void {
             this.setLoginLogoutText();
             var isAuthenticated = this.authService.user.isAuthenticated;
             if (isAuthenticated) { //logout 
@@ -35,13 +36,13 @@ namespace expenseApp {
             this.redirectToLogin();
         };
 
-        redirectToLogin() {
+        redirectToLogin() : void {
             var path = '/login' + this.$location.$$path;
             this.$location.replace();
             this.$location.path(path);
         }
 
-        setLoginLogoutText() {
+        setLoginLogoutText() : void {
             this.loginLogoutText = (this.authService.user.isAuthenticated) ? 'Logout' : 'Login';
         }
 

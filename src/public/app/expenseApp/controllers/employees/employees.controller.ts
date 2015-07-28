@@ -48,10 +48,10 @@ namespace expenseApp.employees {
             this.pageRecords();
         }
 
-        deleteEmployee(id) {
+        deleteEmployee(id: number) {
 
             var emp = this.getEmployeeById(id);
-            var empName = emp.name.first + ' ' + emp.name.first;
+            var empName = emp.name.first + ' ' + emp.name.last;
 
             var modalOptions = {
                 closeButtonText: 'Cancel',

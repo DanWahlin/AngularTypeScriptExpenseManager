@@ -1,7 +1,7 @@
 ///<reference path="../../../../../../tools/typings/tsd.d.ts" />
 ///<reference path="../../../../../../tools/typings/expenseApp.d.ts" />
 
-module expenseApp.employees {
+namespace expenseApp.employees {
 
     class EmployeeExpensesController {
         employeeId: number;
@@ -9,7 +9,7 @@ module expenseApp.employees {
         expensesTotal: number = 0.00;
 
         static $inject = ['$scope', '$routeParams', '$window', 'expenseApp.services.dataService'];
-        constructor(private $scope: ng.IScope, private $routeParams: IEmployeeRouteParams,
+        constructor(private $scope: ng.IScope, private $routeParams: shared.IEmployeeRouteParams,
                     private $window: ng.IWindowService, private dataService) {
 
             this.employeeId = (this.$routeParams.employeeId) ? parseInt(this.$routeParams.employeeId, 10) : 0;

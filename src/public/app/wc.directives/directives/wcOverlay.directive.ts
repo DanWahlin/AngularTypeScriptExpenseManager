@@ -1,7 +1,7 @@
 ///<reference path="../../../../../tools/typings/tsd.d.ts" />
 ///<reference path="../../../../../tools/typings/expenseApp.d.ts" />
 
-module wc.directives {
+namespace wc.directives {
 
     interface IJQueryWindow extends ng.IWindowService {
        jQuery;

@@ -12,7 +12,7 @@ namespace expenseApp {
         static $inject = ['$routeParams', '$location', 'expenseApp.services.authService'];
         constructor(private $routeParams: shared.IRouteParamsServiceWithRedirect, 
                     private $location: ng.ILocationService,
-                    private authService: services.IAuthService) {
+                    private authService: services.AuthService) {
             
         }
 

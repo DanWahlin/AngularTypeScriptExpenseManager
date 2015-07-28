@@ -1,7 +1,7 @@
 ///<reference path="../../../../../../tools/typings/tsd.d.ts" />
 ///<reference path="../../../../../../tools/typings/expenseApp.d.ts" />
 
-module expenseApp.employees {
+namespace expenseApp.employees {
     'use strict';
 
     interface IEditFormScope extends ng.IScope {
@@ -25,7 +25,7 @@ module expenseApp.employees {
         static $inject = ['$scope', '$location', '$routeParams', '$timeout',
                           'expenseApp.services.dataService', 'expenseApp.services.modalService'];
         constructor(private $scope: IEditFormScope, private $location: ng.ILocationService,
-                    private $routeParams: IEmployeeRouteParams, private $timeout: ng.ITimeoutService,
+                    private $routeParams: shared.IEmployeeRouteParams, private $timeout: ng.ITimeoutService,
                     private dataService: expenseApp.services.DataService,
                     private modalService: expenseApp.services.ModalService) {
 

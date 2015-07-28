@@ -3,7 +3,7 @@
 
 'use strict';
 
-module expenseApp.directives {
+namespace expenseApp.directives {
 
     interface IWcUniqueAttributes extends ng.IAttributes  {
         wcUniqueProperty: string;

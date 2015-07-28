@@ -1,7 +1,7 @@
 ///<reference path="../../../../../tools/typings/tsd.d.ts" />
 ///<reference path="../../../../../tools/typings/expenseApp.d.ts" />
 
-module expenseApp.services {
+namespace expenseApp.services {
     'use strict';
 
     export class DataService {

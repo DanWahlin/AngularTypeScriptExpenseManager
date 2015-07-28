@@ -47,6 +47,15 @@ module expenseApp.shared {
         expensesTotal?: number;
     }
     
+    export interface IEmployeeRouteParams extends ng.route.IRouteParamsService {
+        employeeId: string;
+    }
+    
+    export interface IExpenseRouteParams extends ng.route.IRouteParamsService {
+      employeeId: string;
+      expenseId: string;
+    }
+    
     export interface IRouteParamsServiceWithRedirect extends ng.route.IRouteParamsService {
         redirect: boolean;
     }
@@ -61,6 +70,12 @@ module expenseApp.shared {
 
     export interface IHttpPromiseCallbackErrorArg extends ng.IHttpPromiseCallbackArg<any> {
          message: string;
+    }
+    
+    export interface IUser {
+        loginPath: string;
+        isAuthenticated: boolean;
+        roles: string[];
     }
 
 

@@ -3,22 +3,10 @@
 
 namespace expenseApp.services {
     'use strict';
-    
-    export interface IAuthService {
-        login(email: string, password: string): ng.IPromise<boolean>;
-        logout(): ng.IPromise<boolean>;
-        user: IUser;
-    }
-    
-    export interface IUser {
-        loginPath: string;
-        isAuthenticated: boolean;
-        roles: string[];
-    }
 
-    export class AuthService implements IAuthService {
+    export class AuthService  {
         serviceBase: string = '/api/auth/';
-        user: IUser = {
+        user: shared.IUser = {
             loginPath: '/login',
             isAuthenticated: false,
             roles: null

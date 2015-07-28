@@ -2,7 +2,7 @@
 ///<reference path="../../../../../tools/typings/expenseApp.d.ts" />
 
 'use strict';
-module employeeApp.services {
+namespace employeeApp.services {
 
     export class HttpInterceptor401 {
 
