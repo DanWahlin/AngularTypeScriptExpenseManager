@@ -8,12 +8,16 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     clean = require('gulp-clean'),
     config = require('./gulpfile.config'),
-    tsProject = tsc.createProject('tsconfig.json');
+    tsProject = tsc.createProject('tsconfig.json'),
+    fs = require('fs');
 
 /**
  * Generates the app.d.ts references file dynamically from all application *.ts files.
  */
 gulp.task('gen-ts-refs', function () {
+    fs.writeFileSync(config.appTypeScriptReferences, '//{\n//}');
+    console.log("Saved: " + config.appTypeScriptReferences);
+
     var target = gulp.src(config.appTypeScriptReferences);
     var sources = gulp.src([config.allTypeScript], {read: false});
     return target.pipe(inject(sources, {
@@ -65,7 +69,7 @@ gulp.task('clean-ts', function () {
 });
 
 gulp.task('watch', function() {
-    gulp.watch([config.allTypeScript], ['ts-lint', 'compile-ts', 'gen-ts-refs']);
+    gulp.watch([config.allTypeScript], ['ts-lint', 'gen-ts-refs', 'compile-ts']);
 });
 
-gulp.task('default', ['ts-lint', 'compile-ts', 'gen-ts-refs', 'watch']);
+gulp.task('default', ['ts-lint', 'gen-ts-refs', 'compile-ts', 'watch']);
