@@ -36,4 +36,4 @@ The application uses:
 
 6. Open browser at <http://localhost:8000/>
 
-The application was written by [Dan Wahlin](http://twitter.com/danwahlin).
+
