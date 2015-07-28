@@ -50,8 +50,8 @@ namespace expenseApp.employees {
 
         deleteEmployee(id: number) {
 
-            var emp = this.getEmployeeById(id);
-            var empName = emp.name.first + ' ' + emp.name.last;
+            var emp: shared.IEmployee = this.getEmployeeById(id);
+            var empName: string = emp.name.first + ' ' + emp.name.last;
 
             var modalOptions = {
                 closeButtonText: 'Cancel',
