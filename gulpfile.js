@@ -15,12 +15,9 @@ var gulp = require('gulp'),
  * Generates the app.d.ts references file dynamically from all application *.ts files.
  */
 gulp.task('gen-ts-refs', function () {
-    fs.writeFile(config.appTypeScriptReferences, '//{\n//}', function(err) {
-        if (err) {
-            return console.log(err);
-        }
-        console.log("Created: " + config.appTypeScriptReferences);
-    });
+    fs.writeFileSync(config.appTypeScriptReferences, '//{\n//}');
+    console.log("Saved: " + config.appTypeScriptReferences);
+
     var target = gulp.src(config.appTypeScriptReferences);
     var sources = gulp.src([config.allTypeScript], {read: false});
     return target.pipe(inject(sources, {
