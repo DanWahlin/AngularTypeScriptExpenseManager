@@ -12,6 +12,8 @@ The application uses:
 * TypeScript
 * Node.js
 
+The TypeScript source can be found in the src/public/app folder.
+
 # Usage
 
 1. Install global dependencies **if necessary**
