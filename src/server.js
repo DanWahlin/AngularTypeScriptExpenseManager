@@ -37,7 +37,7 @@ process.on('uncaughtException', function(err) {
 //*********************************************************
 //    Convention based route loading (saves a lot of code)
 //*********************************************************
-routes.load(app, './controllers');
+routes.load(app, __dirname + '/controllers');
 
 app.listen(port, function (err) {
     console.log('[%s] Listening on http://localhost:%d', app.settings.env, port);
