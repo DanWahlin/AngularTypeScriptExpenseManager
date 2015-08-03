@@ -38,7 +38,7 @@ var routes = function () {
                 }
 
                 //Load the JavaScript file ("controller") and pass the router to it
-                require('../' + fullName)(router);
+                require(fullName)(router);
                 //Associate the route with the router
                 app.use(baseRoute, router);
             }
