@@ -21,9 +21,10 @@ tools/typings/*
 !tools/typings/expenseApp.d.ts
 **/bower_packages
 
-# all generated JS
-src/js
-src/app/**/*.js
-src/app/**/*.js.map
+# all generated JS except a potential "lib" folder
+!src/public/js/lib
+src/public/js
+src/public/app/**/*.js
+src/public/app/**/*.js.map
 
 *.log
