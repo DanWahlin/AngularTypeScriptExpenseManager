@@ -32,7 +32,7 @@ var routes = function () {
 
                 var router = express.Router();
                 //Generate the route
-                var baseRoute = dirs.join('/').split('controllers')[1];
+                var baseRoute = dirs.join('/').split(startFolder)[1];
                 if (app.settings.env === 'development') {
                     console.log('Created route: ' + baseRoute + ' for ' + fullName);
                 }
