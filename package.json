@@ -20,6 +20,14 @@
     "azure ad",
     "adal"
   ],
+  "scripts": {
+    "start": "gulp server",
+    "postinstall": "tsd reinstall -so && gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DanWahlin/AngularTypeScriptExpenseManager.git"
+  },
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.13.2",

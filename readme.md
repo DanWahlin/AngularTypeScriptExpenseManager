@@ -20,22 +20,14 @@ The TypeScript source can be found in the src/public/app folder.
 
         npm install -g gulp-cli tsd
 
-2. Install node packages:
+2. Install node packages (installs tsd definitions and compiles TS):
 
         npm install
 
-3. Retrieve typescript definitions list
+4. Launch the server
 
-        tsd reinstall -so
+        npm start
 
-4. Run gulp
-
-        gulp
-
-5. Launch the server
-
-        node server.js
-
-6. Open browser at <http://localhost:8000/>
+5. Open browser at <http://localhost:8000/>
 
 

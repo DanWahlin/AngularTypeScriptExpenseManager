@@ -8,7 +8,9 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     clean = require('gulp-clean'),
     config = require('./gulpfile.config'),
-    tsProject = tsc.createProject('tsconfig.json');
+    tsProject = tsc.createProject('tsconfig.json'),
+    spawn = require('child_process').spawn,
+    fs = require('fs');
 
 /**
  * Generates the app.d.ts references file dynamically from all application *.ts files.
@@ -64,8 +66,15 @@ gulp.task('clean-ts', function () {
       .pipe(clean());
 });
 
+gulp.task('server', ['default', 'watch'], function() {
+    var server = spawn('node', ['./src/server.js']);
+    var log = fs.createWriteStream('server.log', { flags: 'a' });
+    server.stdout.pipe(log);
+    server.stderr.pipe(log);
+})
+
 gulp.task('watch', function() {
     gulp.watch([config.allTypeScript], ['ts-lint', 'compile-ts', 'gen-ts-refs']);
 });
 
-gulp.task('default', ['ts-lint', 'compile-ts', 'gen-ts-refs', 'watch']);
+gulp.task('default', ['ts-lint', 'compile-ts', 'gen-ts-refs']);
