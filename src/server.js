@@ -2,7 +2,8 @@
 
 //3rd Party Modules
 
-var express                 = require('express'),
+var path                    = require('path'),
+    express                 = require('express'),
     morgan                  = require('morgan'),
     bodyParser              = require('body-parser'),
 

@@ -1,1 +1,0 @@
-{"version":3,"sources":["expenseApp/controllers/expenses/expenseInterfaces.ts"],"names":[],"mappings":"AAGC","file":"expenseApp/controllers/expenses/expenseInterfaces.js","sourcesContent":["interface IExpenseRouteParams extends ng.route.IRouteParamsService {\n  employeeId: string;\n  expenseId: string;\n}\n"],"sourceRoot":"/source/"}

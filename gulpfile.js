@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     tsc = require('gulp-typescript'),
     tslint = require('gulp-tslint'),
     sourcemaps = require('gulp-sourcemaps'),
-    clean = require('gulp-clean'),
+    del = require('del'),
     config = require('./gulpfile.config'),
     tsProject = tsc.createProject('tsconfig.json'),
     spawn = require('child_process').spawn,
@@ -53,24 +53,23 @@ gulp.task('compile-ts', function () {
 });
 
 /**
- * Remove all generated JavaScript files from TypeScript compiltion.
+ * Remove all generated JavaScript files from TypeScript compilation.
  */
-gulp.task('clean-ts', function () {
+gulp.task('clean-ts', function (cb) {
   var typeScriptGenFiles = [
-                            config.tsOutputPath +'**/*.js',    // path to all JS files auto gen'd by editor
-                            config.tsOutputPath +'**/*.js.map' // path to all sourcemap files auto gen'd by editor
+                              config.tsOutputPath +'/**/*.js',    // path to all JS files auto gen'd by editor
+                              config.tsOutputPath +'/**/*.js.map', // path to all sourcemap files auto gen'd by editor
+                              '!' + config.tsOutputPath + '/lib'
                            ];
 
   // delete the files
-  return gulp.src(typeScriptGenFiles, {read: false})
-      .pipe(clean());
+  del(typeScriptGenFiles, cb);
 });
 
 gulp.task('server', ['default', 'watch'], function() {
     var server = spawn('node', ['./src/server.js']);
-    var log = fs.createWriteStream('server.log', { flags: 'a' });
-    server.stdout.pipe(log);
-    server.stderr.pipe(log);
+    server.stdout.pipe(process.stdout);
+    server.stderr.pipe(process.stderr);
 })
 
 gulp.task('watch', function() {

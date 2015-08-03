@@ -16,9 +16,9 @@
 /// <reference path="../../src/public/app/expenseApp/shared/interfaces.ts" />
 /// <reference path="../../src/public/app/wc.directives/directives/menuHighlighter.directive.ts" />
 /// <reference path="../../src/public/app/wc.directives/directives/wcOverlay.directive.ts" />
+/// <reference path="../../src/public/app/expenseApp/controllers/expenses/expenseChild.controller.ts" />
+/// <reference path="../../src/public/app/expenseApp/controllers/expenses/expenses.controller.ts" />
 /// <reference path="../../src/public/app/expenseApp/controllers/employees/employeeEdit.controller.ts" />
 /// <reference path="../../src/public/app/expenseApp/controllers/employees/employeeExpenses.controller.ts" />
 /// <reference path="../../src/public/app/expenseApp/controllers/employees/employees.controller.ts" />
-/// <reference path="../../src/public/app/expenseApp/controllers/expenses/expenseChild.controller.ts" />
-/// <reference path="../../src/public/app/expenseApp/controllers/expenses/expenses.controller.ts" />
 //}
