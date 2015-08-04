@@ -22,7 +22,7 @@ var routes = function () {
                 //Recursively walk-through folders
                 load(app, fullName);
             }
-            else if (file.toLowerCase().indexOf('.js')) {
+            else if (file.toLowerCase().indexOf('.js') > -1) {
                 //Grab path to JavaScript file and use it to construct the route
                 var dirs = path.dirname(fullName).split(path.sep);
                 
