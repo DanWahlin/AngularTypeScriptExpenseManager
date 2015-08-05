@@ -1,10 +1,7 @@
-///<reference path="../../../../../../tools/typings/tsd.d.ts" />
-///<reference path="../../../../../../tools/typings/expenseApp.d.ts" />
 var expenseApp;
 (function (expenseApp) {
     var expenses;
     (function (expenses) {
-        'use strict';
         var ExpenseChildController = (function () {
             function ExpenseChildController($scope, $window, $location, dataService, modalService) {
                 var _this = this;

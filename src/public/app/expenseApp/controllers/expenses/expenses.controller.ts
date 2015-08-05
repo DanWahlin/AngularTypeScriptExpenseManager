@@ -1,8 +1,4 @@
-///<reference path="../../../../../../tools/typings/tsd.d.ts" />
-///<reference path="../../../../../../tools/typings/expenseApp.d.ts" />
-
 namespace expenseApp.expenses {
-    'use strict';
 
     class ExpensesController {
 

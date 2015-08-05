@@ -1,8 +1,5 @@
-///<reference path="../../../../../tools/typings/tsd.d.ts" />
-///<reference path="../../../../../tools/typings/expenseApp.d.ts" />
 var expenseApp;
 (function (expenseApp) {
-    'use strict';
     var WcAnimations = (function () {
         function WcAnimations() {
             this._duration = 0.5;

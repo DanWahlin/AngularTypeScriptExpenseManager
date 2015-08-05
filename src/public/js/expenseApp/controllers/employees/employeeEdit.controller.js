@@ -1,10 +1,7 @@
-///<reference path="../../../../../../tools/typings/tsd.d.ts" />
-///<reference path="../../../../../../tools/typings/expenseApp.d.ts" />
 var expenseApp;
 (function (expenseApp) {
     var employees;
     (function (employees) {
-        'use strict';
         var EmployeeEditController = (function () {
             function EmployeeEditController($scope, $location, $routeParams, $timeout, dataService, modalService) {
                 var _this = this;

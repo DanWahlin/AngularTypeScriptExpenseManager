@@ -1,10 +1,7 @@
-///<reference path="../../../../../tools/typings/tsd.d.ts" />
-///<reference path="../../../../../tools/typings/expenseApp.d.ts" />
 var expenseApp;
 (function (expenseApp) {
     var services;
     (function (services) {
-        'use strict';
         var AuthService = (function () {
             function AuthService($rootScope, $http) {
                 this.$rootScope = $rootScope;

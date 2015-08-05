@@ -1,8 +1,3 @@
-///<reference path="../../../../../tools/typings/tsd.d.ts" />
-///<reference path="../../../../../tools/typings/expenseApp.d.ts" />
-
-'use strict';
-
 namespace expenseApp {
 
   export function nameExpenseFilter() {

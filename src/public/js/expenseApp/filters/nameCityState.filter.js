@@ -1,8 +1,5 @@
-///<reference path="../../../../../tools/typings/tsd.d.ts" />
-///<reference path="../../../../../tools/typings/expenseApp.d.ts" />
 var expenseApp;
 (function (expenseApp) {
-    'use strict';
     function nameCityStateFilter() {
         return function (employees, filterValue) {
             if (!filterValue) {

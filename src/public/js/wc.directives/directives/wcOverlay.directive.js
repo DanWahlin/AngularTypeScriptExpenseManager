@@ -1,5 +1,3 @@
-///<reference path="../../../../../tools/typings/tsd.d.ts" />
-///<reference path="../../../../../tools/typings/expenseApp.d.ts" />
 var wc;
 (function (wc) {
     var directives;

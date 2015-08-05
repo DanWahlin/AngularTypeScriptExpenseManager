@@ -1,10 +1,7 @@
-///<reference path="../../../../../../tools/typings/tsd.d.ts" />
-///<reference path="../../../../../../tools/typings/expenseApp.d.ts" />
 var expenseApp;
 (function (expenseApp) {
     var expenses;
     (function (expenses) {
-        'use strict';
         var ExpensesController = (function () {
             function ExpensesController($filter, $window, dataService) {
                 this.$filter = $filter;
