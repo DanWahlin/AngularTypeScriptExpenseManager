@@ -9,7 +9,6 @@ var GulpConfig = (function () {
 
         this.typings = './tools/typings/';
         this.libraryTypeScriptDefinitions = './tools/typings/**/*.ts';
-        this.appTypeScriptReferences = this.typings + 'expenseApp.d.ts';
     }
     return gulpConfig;
 })();

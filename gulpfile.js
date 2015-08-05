@@ -13,21 +13,6 @@ var gulp = require('gulp'),
     fs = require('fs');
 
 /**
- * Generates the app.d.ts references file dynamically from all application *.ts files.
- */
-gulp.task('gen-ts-refs', function () {
-    var target = gulp.src(config.appTypeScriptReferences);
-    var sources = gulp.src([config.allTypeScript], {read: false});
-    return target.pipe(inject(sources, {
-        starttag: '//{',
-        endtag: '//}',
-        transform: function (filepath) {
-            return '/// <reference path="../..' + filepath + '" />';
-        }
-    })).pipe(gulp.dest(config.typings));
-});
-
-/**
  * Lint all custom TypeScript files.
  */
 gulp.task('ts-lint', function () {
@@ -39,8 +24,7 @@ gulp.task('ts-lint', function () {
  */
 gulp.task('compile-ts', function () {
     var sourceTsFiles = [config.allTypeScript,                //path to typescript files
-                         config.libraryTypeScriptDefinitions, //reference to library .d.ts files
-                         config.appTypeScriptReferences];     //reference to app.d.ts files
+                         config.libraryTypeScriptDefinitions]; //reference to library .d.ts files
 
     var tsResult = gulp.src(sourceTsFiles)
                        .pipe(sourcemaps.init())
@@ -73,7 +57,7 @@ gulp.task('server', ['default', 'watch'], function() {
 })
 
 gulp.task('watch', function() {
-    gulp.watch([config.allTypeScript], ['ts-lint', 'compile-ts', 'gen-ts-refs']);
+    gulp.watch([config.allTypeScript], ['ts-lint', 'compile-ts']);
 });
 
-gulp.task('default', ['ts-lint', 'compile-ts', 'gen-ts-refs']);
+gulp.task('default', ['ts-lint', 'compile-ts']);
