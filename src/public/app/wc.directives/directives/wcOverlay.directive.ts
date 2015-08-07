@@ -1,6 +1,3 @@
-///<reference path="../../../../../tools/typings/tsd.d.ts" />
-///<reference path="../../../../../tools/typings/expenseApp.d.ts" />
-
 namespace wc.directives {
 
     interface IJQueryWindow extends ng.IWindowService {

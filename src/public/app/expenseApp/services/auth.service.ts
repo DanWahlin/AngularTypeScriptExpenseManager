@@ -1,8 +1,4 @@
-///<reference path="../../../../../tools/typings/tsd.d.ts" />
-///<reference path="../../../../../tools/typings/expenseApp.d.ts" />
-
 namespace expenseApp.services {
-    'use strict';
 
     export class AuthService  {
         serviceBase: string = '/api/auth/';
