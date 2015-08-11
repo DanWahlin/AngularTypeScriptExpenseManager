@@ -68,5 +68,5 @@ module wc.directives {
         }
     }
 
-    angular.module('wc.directives').directive('menuHighlighter', MenuHighlighterDirective.instance);
+    angular.module('wc.directives').directive('menuHighlighter', ['$location', MenuHighlighterDirective.instance]);
 }

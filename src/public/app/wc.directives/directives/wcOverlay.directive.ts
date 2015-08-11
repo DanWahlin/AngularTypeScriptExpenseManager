@@ -10,7 +10,6 @@ namespace wc.directives {
 
     class OverlayDirective implements ng.IDirective {
 
-        static $inject = ['$q', '$timeout', '$window', 'httpInterceptor'];
         static instance($q: ng.IQService, $timeout: ng.ITimeoutService,
                         $window: IJQueryWindow, httpInterceptor) : ng.IDirective {
             return new OverlayDirective($q, $timeout, $window, httpInterceptor);

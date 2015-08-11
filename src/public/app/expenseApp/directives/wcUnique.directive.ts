@@ -7,7 +7,6 @@ namespace expenseApp.directives {
 
     class WcUniqueDirective implements ng.IDirective {
 
-        static $inject = ['$q', 'expenseApp.services.DataService'];
         static instance($q: ng.IQService, dataService: expenseApp.services.DataService): ng.IDirective {
             return new WcUniqueDirective($q, dataService);
         }
@@ -51,5 +50,5 @@ namespace expenseApp.directives {
         }
     }
 
-    angular.module('expenseApp').directive('wcUnique', WcUniqueDirective.instance);
+    angular.module('expenseApp').directive('wcUnique', ['$q', 'expenseApp.services.DataService', WcUniqueDirective.instance]);
 }
